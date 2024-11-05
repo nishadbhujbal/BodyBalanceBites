@@ -48,7 +48,7 @@ This project requires Node.js and npm (Node Package Manager) to be installed on 
    npm install
 ```
 
-### Running the Project
+## Running the Project
 
 1. Navigate to index.html.
 2. Click on Go live in your IDE.
