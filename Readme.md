@@ -31,7 +31,7 @@ This project requires Node.js and npm (Node Package Manager) to be installed on 
 ### Clone the Repository:
 
 ```bash
-   git clone https://github.com/your_username/BodyBalanceBites.git
+   git clone https://github.com/nishadbhujbal/BodyBalanceBites.git
 
 ```
 
@@ -56,8 +56,8 @@ This project requires Node.js and npm (Node Package Manager) to be installed on 
 ## Using the Website
 
 1. On the Dashboard button, enter your height and weight in the BMI calculator.
-2. Click the "Calculate BMI" button.
-3. Click on your desired section to explore recipe recommendations.
+2. Click the "Calculate" button to calculate your BMI.
+3. Based on your BMI results, click on your desired section to explore recipe recommendations.
 
 ## Future Enhancements
 
