@@ -41,9 +41,57 @@ button1.addEventListener("click", () => {
   }
 });
 
+fetch(
+  "https://api.spoonacular.com/recipes/random?apiKey=514bff3015454e7f9b2cecb750e09eb0&number=2"
+)
+  .then((response) => response.json())
+  .then((data) => {
+    console.log(data);
+
+    if (data && data.recipes && data.recipes.length > 0) {
+      const recipes = data.recipes;
+
+      const recipeContainer = document.getElementById("recipeContainer");
+
+      const html = recipes
+        .map((recipe) => {
+          const instructionWords = recipe.instructions.split(" ");
+          const shortInstructions = instructionWords.slice(0, 100).join(" ");
+
+          return `
+            <li>
+                <a href="#" class="block group">
+                  <img
+                    src="${recipe.image}"
+                    class="object-cover w-full rounded aspect-square"
+                  />
+
+                  <div class="mt-3">
+                    <h3
+                      class="font-bold text-[#7F411C] group-hover:underline group-hover:underline-offset-4"
+                    >
+                    ${recipe.title}
+                    </h3>
+
+                    <p class="mt-1 text-sm text-[#fdfdfd]">
+                    ${shortInstructions}
+                    </p>
+                  </div>
+                </a>
+            </li>
+          `;
+        })
+        .join("");
+
+      recipeContainer.innerHTML = html;
+    } else {
+      console.error("No recipes found in the response.");
+    }
+  })
+  .catch((error) => console.error("Error fetching data:", error));
+
 let button2 = document.getElementById("Lossbtn");
 let isShowingAll = false;
-
 button2.addEventListener("click", () => {
   const LossOutput = document.getElementById("MoreLoss");
 
@@ -53,6 +101,56 @@ button2.addEventListener("click", () => {
   } else {
     LossOutput.style.display = "inline";
     button2.innerHTML = "Show Less";
+    fetch(
+      "https://api.spoonacular.com/recipes/random?apiKey=514bff3015454e7f9b2cecb750e09eb0&number=3"
+    )
+      .then((response) => response.json())
+      .then((data) => {
+        console.log(data);
+
+        if (data && data.recipes && data.recipes.length > 0) {
+          const recipes = data.recipes;
+
+          const recipeContainer2 = document.getElementById("recipeContainer2");
+
+          const html = recipes
+            .map((recipe) => {
+              const instructionWords = recipe.instructions.split(" ");
+              const shortInstructions = instructionWords
+                .slice(0, 100)
+                .join(" ");
+
+              return `
+                <li>
+                    <a href="#" class="block group">
+                      <img
+                        src="${recipe.image}"
+                        class="object-cover w-full rounded aspect-square"
+                      />
+    
+                      <div class="mt-3">
+                        <h3
+                          class="font-bold text-[#7F411C] group-hover:underline group-hover:underline-offset-4"
+                        >
+                        ${recipe.title}
+                        </h3>
+    
+                        <p class="mt-1 text-sm text-[#fdfdfd]">
+                        ${shortInstructions}
+                        </p>
+                      </div>
+                    </a>
+                </li>
+              `;
+            })
+            .join("");
+
+          recipeContainer2.innerHTML = html;
+        } else {
+          console.error("No recipes found in the response.");
+        }
+      })
+      .catch((error) => console.error("Error fetching data:", error));
   }
 
   isShowingAll = !isShowingAll;
@@ -61,6 +159,54 @@ button2.addEventListener("click", () => {
 let button3 = document.getElementById("Gainbtn");
 let isShowingAll_1 = false;
 
+fetch(
+  "https://api.spoonacular.com/recipes/random?apiKey=514bff3015454e7f9b2cecb750e09eb0&number=2"
+)
+  .then((response) => response.json())
+  .then((data) => {
+    console.log(data);
+
+    if (data && data.recipes && data.recipes.length > 0) {
+      const recipes = data.recipes;
+
+      const recipeContainer3 = document.getElementById("recipeContainer3");
+
+      const html = recipes
+        .map((recipe) => {
+          const instructionWords = recipe.instructions.split(" ");
+          const shortInstructions = instructionWords.slice(0, 100).join(" ");
+
+          return `
+          <li>
+          <a href="#" class="block group">
+            <img
+              src="${recipe.image}"
+              class="object-cover w-full rounded aspect-square"
+            />
+
+            <div class="mt-3">
+              <h3
+                class="font-bold text-[#7F411C] group-hover:underline group-hover:underline-offset-4"
+              >
+              ${recipe.title}
+              </h3>
+
+              <p class="mt-1 text-sm text-[#262424]">
+              ${shortInstructions}
+              </p>
+            </div>
+          </a>
+        </li>
+          `;
+        })
+        .join("");
+
+      recipeContainer3.innerHTML = html;
+    } else {
+      console.error("No recipes found in the response.");
+    }
+  })
+  .catch((error) => console.error("Error fetching data:", error));
 button3.addEventListener("click", () => {
   const GainOutput = document.getElementById("MoreGain");
 
@@ -70,6 +216,56 @@ button3.addEventListener("click", () => {
   } else {
     GainOutput.style.display = "inline";
     button3.innerHTML = "Show Less";
+    fetch(
+      "https://api.spoonacular.com/recipes/random?apiKey=514bff3015454e7f9b2cecb750e09eb0&number=3"
+    )
+      .then((response) => response.json())
+      .then((data) => {
+        console.log(data);
+
+        if (data && data.recipes && data.recipes.length > 0) {
+          const recipes = data.recipes;
+
+          const recipeContainer4 = document.getElementById("recipeContainer4");
+
+          const html = recipes
+            .map((recipe) => {
+              const instructionWords = recipe.instructions.split(" ");
+              const shortInstructions = instructionWords
+                .slice(0, 100)
+                .join(" ");
+
+              return `
+              <li>
+              <a href="#" class="block group">
+                <img
+                  src="${recipe.image}"
+                  class="object-cover w-full rounded aspect-square"
+                />
+    
+                <div class="mt-3">
+                  <h3
+                    class="font-bold text-[#7F411C] group-hover:underline group-hover:underline-offset-4"
+                  >
+                  ${recipe.title}
+                  </h3>
+    
+                  <p class="mt-1 text-sm text-[#262424]">
+                  ${shortInstructions}
+                  </p>
+                </div>
+              </a>
+            </li>
+              `;
+            })
+            .join("");
+
+          recipeContainer4.innerHTML = html;
+        } else {
+          console.error("No recipes found in the response.");
+        }
+      })
+      .catch((error) => console.error("Error fetching data:", error));
   }
 
   isShowingAll_1 = !isShowingAll_1;
@@ -77,10 +273,10 @@ button3.addEventListener("click", () => {
 
 function sendEmail() {
   Email.send({
-    SecureToken: "b5ea760a-afb3-421f-b91b-56b4c592ed44",
-    To: "body.balance.bites@gmail.com",
-    From: "body.balance.bites@gmail.com",
-    Subject: "Users feedback",
+    SecureToken: "c27e6a59-9540-41f1-b0f1-ada501feb2a0",
+    To: "BodyBalanceBites7@gmail.com",
+    From: "BodyBalanceBites7@gmail.com",
+    Subject: "This is the subject",
     Body: "Message :" + document.getElementById("message").value,
   }).then((message) => alert(message));
 }
