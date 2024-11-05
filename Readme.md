@@ -35,7 +35,7 @@ This project requires Node.js and npm (Node Package Manager) to be installed on 
 
 ```
 
-Navigate to the Project Directory:
+### Navigate to the Project Directory:
 
 ```bash
    cd BodyBalanceBites
@@ -50,8 +50,8 @@ Navigate to the Project Directory:
 
 ### Running the Project
 
-Navigate to index.html
-Click on Go live in your IDE
+1. Navigate to index.html.
+2. Click on Go live in your IDE.
 
 ## Using the Website
 
