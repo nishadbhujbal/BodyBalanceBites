@@ -28,7 +28,7 @@ BodyBalanceBites is a web application designed to help users create personalized
 
 This project requires Node.js and npm (Node Package Manager) to be installed on your system. You can download them from the official Node.js website: https://nodejs.org/.
 
-## Clone the Repository:
+### Clone the Repository:
 
 ```bash
    git clone https://github.com/your_username/BodyBalanceBites.git
@@ -42,13 +42,13 @@ Navigate to the Project Directory:
 
 ```
 
-## Install Dependencies:
+### Install Dependencies:
 
 ```bash
    npm install
 ```
 
-## Running the Project
+### Running the Project
 
 Navigate to index.html
 Click on Go live in your IDE
